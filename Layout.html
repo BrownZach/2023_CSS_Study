@@ -57,8 +57,36 @@
             margin: auto;
             margin-top: auto;
         }
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: lightgoldenrodyellow;
+        }
+        li{
+            float: left;
+            border-right: 1px solid blue;
+            border-left: 1px solid blue;
+        }
+        li a{
+            display: block;
+            color: tan;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+        li a:hover{
+            background-color: goldenrod;
+        }
+        .active{
+            background-color: gold;
+        }
+        .ad{
+            float: right;
+            background-color: darkgoldenrod;
+        }
     </style>
-
 </head>
 <body>
     <div class="container">
@@ -76,6 +104,16 @@
     </div>
     <div class="upcomingEvents">Events Go Here</div>
 </div>
+    <div class="container">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Mailing List</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="ad"><a href="#"></a>Things</li>
+        </ul>
+    </div>
 <!--<div style="border: 1px solid black; padding: 25px; background-color: darkgray;">Padding Example</div>
 <div style="border: 1px solid black; margin: 25px; background-color: white;">Margin Example</div>-->
 </body>
