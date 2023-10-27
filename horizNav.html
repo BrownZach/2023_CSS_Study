@@ -37,6 +37,43 @@
             float: right;
             background-color: darkgoldenrod;
         }
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn{
+            outline: none;
+            font-size: 16px;
+            border: none;
+            color: tan;
+            padding: 14px 16px;
+            background-color: inherit;
+            margin: 0;
+            font-family: inherit;
+        }
+        .dropdown-content{
+            display: none;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0 rgba(0,0,0, 0.2);
+            min-width: 160px;
+            background-color: tan;
+            position: absolute;
+        }
+        .dropdown:hover {
+            background-color: goldenrod;
+        }
+        .dropdown-content a{
+            float: none;
+            color: tan;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            background-color: lightgoldenrodyellow;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +81,18 @@
     <ul>
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">Who We Are</a></li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn">Downdrop
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link I</a>
+                    <a href="#">Link II</a>
+                    <a href="#">Link III</a>
+                </div>
+            </div>
+        </li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Mailing List</a></li>
         <li><a href="#">Contact Us</a></li>
